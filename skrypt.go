@@ -9,7 +9,7 @@ const (
   port = ":80"
 )
 
-const N = 1000
+const N = 100
 
 func sieveOfEratosthenes(N int) (primes []int) {
     b := make([]bool, N)
