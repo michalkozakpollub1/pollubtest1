@@ -25,7 +25,7 @@ func sieveOfEratosthenes(N int) (primes []int) {
 var primes = sieveOfEratosthenes(N)
 func WyswietlLiczby(w http.ResponseWriter, r *http.Request) {
 
-    for i := 1; i < N+1; i++ {
+	for i := 1; i < len(primes)+1; i++ {
         fmt.Fprintf(w, "Liczba nr.%d = %d", i, primes[i-1])
 	fmt.Fprintf(w,"\n")
     }
